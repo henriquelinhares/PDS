@@ -11,3 +11,7 @@ let objeto: object = {
     estudante: 'Javascript',
 }
 
+console.log(objeto);
+console.log(lista);
+
+
