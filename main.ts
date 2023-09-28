@@ -5,10 +5,13 @@
 //https://learn.microsoft.com/pt-br/visualstudio/javascript/compile-typescript-code-npm?view=vs-2022
 
 
-let nome: string = 'Luiz'; 
-let numero: number = 30; 
-
-console.log(nome);
+let numero: number = 10; 
 console.log(numero);
+
+
+numero = numero + 12; 
+console.log(numero);
+
+
 
 
