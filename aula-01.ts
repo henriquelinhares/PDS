@@ -26,4 +26,4 @@ class teste {
 }
 
 let c1 = new teste('CFC', 'typescript')
-console.log(c1);
+console.log(c1); 
