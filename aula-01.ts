@@ -17,8 +17,8 @@ console.log(curso);
 
 
 class teste {
-    canal:string = ''
-    curso:string = ''
+    canal:any
+    curso:any
     constructor(canal:string, curso:string){
         this.canal = canal
         this.curso = curso

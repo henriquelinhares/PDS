@@ -3,20 +3,19 @@
 // Para gerar o arquivo em js contentendo as configurações mais atualizadas, o código é: tsc nomedoarquivo.ts --target "ESNEXT" 
 // Para gerar um arquivo de configuração, o comando é: tsc --init
 //Passos para modificar o arquivo gerado: implementar esnext em vez do ano no trecho target. 
-var nome = 'Bruno';
-var canal = 'CFB';
-var curso = 'typescript';
+const nome = 'Bruno';
+const canal = 'CFB';
+const curso = 'typescript';
 console.log(nome);
 console.log(canal);
 console.log(curso);
-var teste = /** @class */ (function () {
-    function teste(canal, curso) {
-        this.canal = '';
-        this.curso = '';
+class teste {
+    canal;
+    curso;
+    constructor(canal, curso) {
         this.canal = canal;
         this.curso = curso;
     }
-    return teste;
-}());
-var c1 = new teste('CFC', 'typescript');
+}
+let c1 = new teste('CFC', 'typescript');
 console.log(c1);
