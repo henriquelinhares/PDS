@@ -1,11 +1,18 @@
 "use strict";
-let nome1 = 'Luiz';
 let nome2 = 'Henrique';
 let idade1 = 30;
-console.log(nome2 + ' ' + idade1);
-class pessoa {
-    constructor(nome, idade, profissão) {
+let algo;
+let boleana = true;
+let grupo = [1, 2, 3, 4];
+class carro {
+    nome3 = this.nome3;
+    idade3 = this.idade3;
+    constructor(nome3, idade3) {
+        this.nome3 = nome3;
+        this.idade3 = idade3;
     }
 }
-let p1 = new pessoa('Linhares', 30, 'Biólogo');
-console.log(p1.nome);
+let c2 = new carro('Peugeot', 15);
+console.log(nome2 + ' ' + idade1);
+console.log(grupo);
+console.log(c2.nome3);
