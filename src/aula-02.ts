@@ -1,7 +1,7 @@
 // Utilizando o comando tsc -w, ativa o modo  Watch input files, criando e modificando automaticamente os arquivos em JS.
 
 //Tipagem em typescript 
-
+ 
 const entrada= require('readline-sync');
 
 let nome2: string = 'Henrique';
