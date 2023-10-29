@@ -49,4 +49,7 @@ function verificarUsuario(usuario) {
         'Acesso restrito para administradores.';
     }
 }
-console.log(verificarUsuario);
+let cursos = ['Javascript', 'Typescript', 'Java'];
+console.log(cursos);
+cursos.push('Lógica');
+console.log(cursos);

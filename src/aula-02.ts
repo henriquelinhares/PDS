@@ -52,7 +52,12 @@ function verificarUsuario(usuario: tipoUsuario): void{
     }
 }
 
-console.log(verificarUsuario);
+let cursos: Array<string> = ['Javascript', 'Typescript', 'Java'];
+console.log(cursos);
+cursos.push('Lógica');
+console.log(cursos);
+
+
 
 
 
