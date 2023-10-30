@@ -19,3 +19,20 @@ console.log(dia2);
 console.log(dia2.getDate());
 console.log(dia2.getDay());
 console.log(dias[dia2.getDay()]);
+var cores;
+(function (cores) {
+    cores["branco"] = "#fff";
+    cores["preto"] = "#000";
+    cores["vermelho"] = "#f00";
+    cores["azul"] = "#00f";
+})(cores || (cores = {}));
+console.log(cores.branco);
+var tipoUsuario;
+(function (tipoUsuario) {
+    tipoUsuario[tipoUsuario["user"] = 15] = "user";
+    tipoUsuario[tipoUsuario["admin"] = 16] = "admin";
+    tipoUsuario[tipoUsuario["super"] = 17] = "super";
+})(tipoUsuario || (tipoUsuario = {}));
+console.log(tipoUsuario.admin);
+const tp = tipoUsuario.super;
+console.log(tp);

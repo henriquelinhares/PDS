@@ -39,7 +39,7 @@ console.log(grupo);
 console.log(c2.nome3);
 console.log(diaHoje);
 
-enum tipoUsuario{
+enum tipoUsuario {
     administrador, 
     comum,
     convidado

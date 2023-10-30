@@ -1,5 +1,7 @@
 //Enumeradores são conjuntos de dados que podemos utilizar e classificar por valores numerais ou textuais. 
 
+//Sintaxe: enum nomeDoUnum{}; 
+
 enum dias {
     domingo = 0,
     segunda = 1,
@@ -24,6 +26,27 @@ console.log(dia2.getDate()); //Imprimindo a data atual.
 console.log(dia2.getDay()); //Imprimindo o número do dia atual. 
 
 console.log(dias[dia2.getDay()]); //Imprimindo a chave do nosso enum que corresponda com o número atual que o getDay() traz. 
+
+enum cores { //Enum do tipo textual. Não é possivel imprimir pr indice. 
+    branco = '#fff',
+    preto = '#000',
+    vermelho = '#f00',
+    azul = '#00f',
+}
+
+console.log(cores.branco); 
+
+enum tipoUsuario {
+    user = 15,
+    admin,
+    super
+}
+
+console.log(tipoUsuario.admin);
+
+const tp: tipoUsuario = tipoUsuario.super;
+console.log(tp);
+
 
 
 
