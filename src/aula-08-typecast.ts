@@ -1,4 +1,4 @@
-//Type assertion é uma afirmação de tipo. É quando precisamos afirmar que um tipo desconhecido é de um tipo conhecido. 
+//Type assertion é uma afirmação de tipo. É quando precisamos afirmar que um tipo desconhecido(unknown) é de um tipo conhecido. 
 
 let nvalor: number;
 let svlaor:string;
@@ -15,7 +15,14 @@ console.log(typeof(nvalor));
 console.log(nvalor);
 
 svlaor = uvalor; //erro
-console.log(svlaor);
-
 
 svlaor = <string> uvalor; 
+console.log(svlaor); 
+
+
+//Typcast
+
+let mvalor:String = '20'; 
+let pvalor:Number = 20;
+console.log();
+ 
