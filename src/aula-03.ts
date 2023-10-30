@@ -15,7 +15,10 @@ let numeros2: (number|string)[] = [10, 20, 30, 40, 'Luiz'];
 console.log(numeros);
 console.log(numeros2);
 
-//Algumas vezes será preciso utilizar um array especifico. 
+//Algumas vezes será preciso utilizar um array especifico, onde não é permitido inserir ou retirar valores desse array. Esse é o ReadonlyArray, que serve apenas para leitura do seu conteudo.
+
+let numeros4:ReadonlyArray<string> = ['Oi', 'Olá', 'Tchau',];
+console.log(numeros4);
 
 
 

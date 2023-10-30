@@ -7,3 +7,5 @@ numeros.shift();
 let numeros2 = [10, 20, 30, 40, 'Luiz'];
 console.log(numeros);
 console.log(numeros2);
+let numeros4 = ['Oi', 'Olá', 'Tchau',];
+console.log(numeros4);
