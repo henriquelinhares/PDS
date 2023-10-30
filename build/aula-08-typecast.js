@@ -1,0 +1,14 @@
+"use strict";
+let nvalor;
+let svlaor;
+let uvalor;
+uvalor = 10;
+console.log(typeof (uvalor));
+console.log(uvalor);
+nvalor = uvalor;
+nvalor = uvalor;
+console.log(typeof (nvalor));
+console.log(nvalor);
+svlaor = uvalor;
+console.log(svlaor);
+svlaor = uvalor;
