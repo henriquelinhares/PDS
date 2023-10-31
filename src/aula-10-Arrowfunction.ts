@@ -11,7 +11,7 @@ teste2();
 
 const teste3 = (t:number[]):Number=>{//Sintaxe da função de seta com retorno.
     let res:number = 0;
-        t.forEach((e)=>{ //Maneira de somar numeros de um array, utilizando função de seta com forEach. 
+        t.forEach((e)=>{ //Maneira de somar numeros de um array, utilizando função de seta com forEach, sem precisar criar uma função a parte.
             res += e;
         }); 
     return res; 
