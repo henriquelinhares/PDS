@@ -26,3 +26,14 @@ function adicionar():any {
 adicionar();
 console.log(medicos[0]);
 
+function listarMedicos() {
+    for (const m of medicos) {
+
+        console.log(`id: ${m.id}`);
+        console.log(`Nome do médico: ${m.nome}`);
+        console.log(`CRM: ${m.crm}`);
+        console.log(`Especialidade: ${m.especialidade}`);
+        console.log("-------------------------------------");
+    }
+}
+listarMedicos() 
