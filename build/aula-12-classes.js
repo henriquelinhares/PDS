@@ -1,10 +1,15 @@
 "use strict";
 class Computador {
-    nomeComp = '';
-    ramComp = 0;
-    cpuComp = 0;
+    nomeComp;
+    ramComp;
+    cpuComp;
     ligado = true;
-    constructor(nomeComp, ramComp, cpuComp, ligado) { }
+    constructor(nomeComp, ramComp, cpuComp, ligado) {
+        this.nomeComp = nomeComp;
+        this.ramComp = ramComp;
+        this.cpuComp = cpuComp;
+        this.ligado = false;
+    }
 }
-const comp1 = new Computador('Primeiro Computador.', 16, 8, false);
+const comp1 = new Computador('Primeiro Computador', 16, 8);
 console.log(comp1);
