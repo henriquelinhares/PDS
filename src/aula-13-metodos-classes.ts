@@ -5,7 +5,9 @@
 
 //O modificador PUBLIC ele é publico, o padrão. Os métodos ou propriedades que sejam do tipo public, podem ser acessados de qualquer lugar. De dentro da classe, de fora e dos filhos(herança) das classes. 
 
-//
+//Private
+
+//Protected  não permite mudar por fora, mas permite alterar por classes que sejam filhas. 
 
 class Computadorr{ 
     nomeComp:string;  
