@@ -3,7 +3,7 @@ class Computadorr {
     nomeComp;
     ramComp;
     cpuComp;
-    ligado = true;
+    ligado;
     constructor(nomeComp, ramComp, cpuComp, ligado) {
         this.nomeComp = nomeComp;
         this.ramComp = ramComp;
@@ -23,8 +23,18 @@ class Computadorr {
     desligar() {
         this.ligado = false;
     }
+    upRam(qtde) {
+        if (qtde <= 0) {
+            this.ramComp = qtde;
+            console.log('Seu PC está sem mémoria.');
+        }
+        else {
+            this.ramComp = qtde;
+        }
+    }
 }
 const compe1 = new Computadorr('Primeiro Computador', 16, 8, true);
-compe1.ligado = true;
 compe1.desligar();
+compe1.ligar();
+compe1.upRam(0);
 compe1.info();
