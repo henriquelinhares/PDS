@@ -24,17 +24,16 @@ class Computadorr {
         this.ligado = false;
     }
     upRam(qtde) {
-        if (qtde <= 0) {
+        if (qtde >= 0 && qtde <= 1000) {
             this.ramComp = qtde;
-            console.log('Seu PC está sem mémoria.');
         }
         else {
-            this.ramComp = qtde;
+            console.log(`A quantidade ${qtde} não é permitido para este computador.`);
         }
     }
 }
-const compe1 = new Computadorr('Primeiro Computador', 16, 8, true);
+const compe1 = new Computadorr('Primeiro Computador', 16, 8);
 compe1.desligar();
 compe1.ligar();
-compe1.upRam(0);
+compe1.upRam(1001);
 compe1.info();
