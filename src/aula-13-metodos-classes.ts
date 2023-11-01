@@ -1,7 +1,7 @@
 //Metodos das classes. 
 //Os métodos são funções das classes. 
 
-//As vezes é necessário proteger os parametros e os métodos, tornando elas privadas. 
+//As vezes é necessário proteger os parametros e os métodos, então utilizamos os modificadores de acesso. 
 
 class Computadorr{ 
     nomeComp:string;  
