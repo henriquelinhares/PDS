@@ -12,8 +12,8 @@ class Monitor{
         this.id = id;
     }
     protected info(){ //Metodo disponivel apenas para a classe mãe e as classes filhas. 
-        console.log(`O nome do monitor é:${this.nome}.` );
-        console.log(`O número de identificação do monitor é:${this.id}.`);
+        console.log(`O nome do monitor é: ${this.nome}.` );
+        console.log(`O número de identificação do monitor é: ${this.id}.`);
     }
 }
 
