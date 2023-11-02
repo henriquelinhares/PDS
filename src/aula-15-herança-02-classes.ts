@@ -11,6 +11,10 @@ class Monitor{
         this.nome = nome;
         this.id = id;
     }
+    protected info(){ //Metodo disponivel apenas para a classe mãe e as classes filhas. 
+        console.log(`O nome do monitor é:${this.nome}.` );
+        console.log(`O número de identificação do monitor é:${this.id}.`);
+    }
 }
 
 class Monitor20Po extends Monitor{
@@ -37,6 +41,8 @@ console.log(moni20.nome);//Acesso externo
 
 const moni15 = new Monitor15Po('15 polegadas', 3, 15);
 // console.log(moni15.id); Gera erro ao tentar acessar o id(protected) externamente.
+
+
 
 
 

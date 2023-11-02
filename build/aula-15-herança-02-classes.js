@@ -6,6 +6,10 @@ class Monitor {
         this.nome = nome;
         this.id = id;
     }
+    info() {
+        console.log(`O nome do monitor é:${this.nome}.`);
+        console.log(`O número de identificação do monitor é:${this.id}.`);
+    }
 }
 class Monitor20Po extends Monitor {
     polegadas;
