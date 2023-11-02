@@ -18,6 +18,10 @@ class Monitor20Po extends Monitor {
         this.polegadas = polegadas;
         console.log('Monitor de 20 polegadas criado. Nome: ' + this.nome);
     }
+    info() {
+        super.info();
+        console.log(`Quantidade de polegadas: ${this.polegadas}`);
+    }
 }
 class Monitor15Po extends Monitor {
     polegadas;
@@ -28,5 +32,5 @@ class Monitor15Po extends Monitor {
     }
 }
 const moni20 = new Monitor20Po('Grandão', 2, 20);
-console.log(moni20.nome);
 const moni15 = new Monitor15Po('15 polegadas', 3, 15);
+console.log(moni20.info());

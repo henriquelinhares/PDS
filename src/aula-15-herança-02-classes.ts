@@ -23,7 +23,11 @@ class Monitor20Po extends Monitor{
         super(nome,id)
         this.polegadas = polegadas;
         console.log('Monitor de 20 polegadas criado. Nome: ' + this.nome);//Devido a classe mãe ser do tipo public, é possivel acessar os atributos fora da classe e também atraves das classes filhas.
-        
+    }
+    info(){//Metodo info da classe filha. 
+        super.info()//Utilizando o super.info() para acessar as informações do metodo info da classe mae.
+        console.log(`Quantidade de polegadas: ${this.polegadas}`);
+        //Será impresso as informações de info da classe mae + as de info da classe filha. 
     }
 }
 
@@ -37,11 +41,12 @@ class Monitor15Po extends Monitor{
 }
 
 const moni20 = new Monitor20Po('Grandão', 2, 20);
-console.log(moni20.nome);//Acesso externo
+// console.log(moni20.nome);//Acesso externo
 
 const moni15 = new Monitor15Po('15 polegadas', 3, 15);
 // console.log(moni15.id); Gera erro ao tentar acessar o id(protected) externamente.
 
+console.log(moni20.info());
 
 
 
