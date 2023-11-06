@@ -1,3 +1,4 @@
+//Crie uma classe Pessoa com os atributos nome, idade e email.
 export class Pessoa{
     nome:string;
     idade:number;
@@ -9,6 +10,7 @@ export class Pessoa{
     }
 }
 
+//Crie uma classe Aluno que herda da classe Pessoa e tenha um atributo adicional matricula.
 class Aluno extends Pessoa{
     matricula:number; 
     constructor(nome: string, idade: number, email:string, matricula:number){
@@ -17,6 +19,7 @@ class Aluno extends Pessoa{
     }
 }
 
+//Crie uma classe Retangulo com os atributos largura e altura e métodos para calcular a área e o perímetro.
 class Retangulo{
     largura:number;
     altura:number;
@@ -38,6 +41,7 @@ class Retangulo{
 // let ret = new Retangulo(10, 35);
 // console.log('A área possui ' + ret.calculoArea(10, 35) + 'm2.');
 
+//Crie uma classe ContaBancaria com os atributos saldo e numeroConta e métodos para depositar, sacar e verificar o saldo.
 class ContaBancaria{
     saldo:number;
     numeroConta:number;
@@ -71,6 +75,10 @@ let cont10 = new ContaBancaria(0, 123456);
 cont10.deposito(150);
 cont10.saque(140);
 cont10.saldoCon();
+
+
+//Crie uma classe Produto com os atributos nome, preco e quantidade e métodos para calcular o valor total (preço * quantidade). 
+
 
 
 
