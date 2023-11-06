@@ -12,8 +12,8 @@ let boleana: boolean = true;
 let grupo: Array<number> = [1, 2, 3, 4];
 
 class carro {
-    nome3: string = this.nome3; 
-    idade3: number = this.idade3;
+    nome3: string; 
+    idade3: number;
     constructor(nome3: string, idade3: number){
         this.nome3 = nome3
         this.idade3 = idade3;

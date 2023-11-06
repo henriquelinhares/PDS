@@ -6,8 +6,8 @@ let algo;
 let boleana = true;
 let grupo = [1, 2, 3, 4];
 class carro {
-    nome3 = this.nome3;
-    idade3 = this.idade3;
+    nome3;
+    idade3;
     constructor(nome3, idade3) {
         this.nome3 = nome3;
         this.idade3 = idade3;
