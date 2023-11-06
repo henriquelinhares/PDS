@@ -50,10 +50,19 @@ class ContaBancaria {
             console.log('Valor não permitido.');
         }
     }
-    saque() {
+    saque(n) {
+        if (n > this.saldo) {
+            console.log('Saldo insuficiente.');
+        }
+        else {
+            this.saldo = this.saldo - n;
+        }
+    }
+    saldoCon() {
+        console.log(`Seu saldo atual é: ${this.saldo}`);
     }
 }
 let cont10 = new ContaBancaria(0, 123456);
-console.log(cont10.saldo);
-cont10.deposito(10);
-console.log(cont10.saldo);
+cont10.deposito(150);
+cont10.saque(140);
+cont10.saldoCon();
