@@ -21,7 +21,5 @@ View: A View é a camada de apresentação, responsável por exibir informaçõe
 
 Controller: O Controller atua como intermediário entre o Model e a View. Ele recebe solicitações do usuário, processa essas solicitações, interage com o Model para obter os dados necessários e, em seguida, atualiza a View apropriada. Exemplo de classe: UsuarioController.
 O que faz: Esta classe pode conter métodos para lidar com ações do usuário, como criar um novo usuário (interagindo com o Model), atualizar informações do usuário (também interagindo com o Model) e direcionar as respostas para a View apropriada para exibição. 
-
-
-
 */
+
